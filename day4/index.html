@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div_border{
+            border: 1px solid black;
+        }
+        .active{
+            display:block;
+        }
+        .inactive{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <div class="div_border" onclick="Accordion.toggle(this)">
+                <p>Label</p>
+            </div>
+            <div class="div_border active">
+                <p>Content</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="div_border" onclick="Accordion.toggle(this)">
+                <p>Label</p>
+            </div>
+            <div class="div_border active">
+                <p>Content</p>
+            </div>
+        </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
