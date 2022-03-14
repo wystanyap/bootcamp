@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+
+        .div1{
+            border: 1px solid black;
+            height: 400px; 
+        }
+        .div2 {
+        border: 1px solid red;
+        height: 200px;   
+        width: 200px; 
+        float: left;      
+        }
+        .div3 {
+        border: 1px solid blue;
+        height: 200px;
+        width: 200px;
+        float: left;  
+        }
+        .clear-fix {
+
+        overflow: auto;
+
+        }
+        .div4 {
+        border: 2px solid green;
+        height: 200px;
+        width: 200px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .col-md-6 {
+                width: 50%;
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .col-lg-3 {
+                width: 33%;
+                margin: 0;
+            }
+        }
+    </style>   
+</head>
+<body>
+
+<div class="div1">
+    <div class="clear-fix">
+        <div class="div2 col-md-6 col-lg-3"><p>borias</p></div>
+        <div class="div3 col-md-6 col-lg-3"><p>tope</p></div>
+    </div>
+
+
+
+</div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>   
+    <script src="script.js"></script>    
+</body>
+</html>
