@@ -28,6 +28,11 @@ export default {
 
     });
     },
+    removeToDo(index,id){
+      axios.delete("http://localhost:8080/todos/" + id).then((response) => {  
+          this.infos.splice(index,1);   
+    });
+    }
   },
 };
 </script>
@@ -38,8 +43,9 @@ export default {
     <input type="text" v-model="input"/>
     <button @click="addToDo">Button</button>
     <ul>
-      <li v-for="info in infos" :key="info.id">
+      <li v-for="(info, index) in infos" :key="info.id">
         {{ info.message }}
+        <button @click="removeToDo(index,info.id)">X</button>
       </li>
     </ul>
   </div>
